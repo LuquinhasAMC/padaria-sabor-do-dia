@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Padaria Sabor do Dia</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="topoB">
+        <h1 id="h1">Padaria Sabor do Dia</h1>
+        <div id="btsB">
+            <button class="btsM" onclick="btC('contato')">Contato</button>
+            <button class="btsM" onclick="btD('delicias')">Nossas delicias</button>
+            <button class="btsM" onclick="btI('inicioS')">Início</button>
+        </div>
+    </div>
+    <section id="inicioS">
+        <div id="inicioB">
+            <h2 id="titleinicio">Padaria Sabor do Dia</h2>
+            <p id="pinicio">A Padaria Sabor do Dia oferece do bom e do melhor em suas delicias, trazendo ingredientes de alta qualidade! Peça o seu lanchinho agora.</p>
+            <button id="btinicio" onclick="btD('delicias')">Veja as nossas delicias</button>
+        </div>
+    </section>
+    <section id="delicias">
+        <div class="barS">
+            <h1 class="titles">- Nossas delicias -</h1>
+            <div class="barsD">
+                <img class="imgD" src="recursos/pao.webp" alt="pão fresco">
+                <div class="txtD">
+                    <h2 class="titleD">Temos Pão fresquinho</h2>
+                    <p class="pD">Um delicioso pão para as suas manhãs, ideal para tomar com um cafezinho.</p>
+                    <button class="btsP" onclick="pedir('pedidos')">Pedir um pão quentinho</button>
+                </div>
+            </div>
+            <div class="barsD">
+                <img class="imgD" src="recursos/bolo.jpeg" alt="pão fresco">
+                <div class="txtD">
+                    <h2 class="titleD">Temos Bolos de vários sabores</h2>
+                    <p class="pD">Bolos feitos com muito carinho, ideal para o chá da tarde.</p>
+                    <button class="btsP" onclick="pedir('pedidos')">Pedir um bolo</button>
+                </div>
+            </div>
+            <div class="barsD">
+                <img class="imgD" src="recursos/torta.jpeg" alt="pão fresco">
+                <div class="txtD">
+                    <h2 class="titleD">Temos Torta salgada e doce</h2>
+                    <p class="pD">Nossas tortas são muito elogiadas pela vizinhança, elas são uma ótima opção para o lanche da tarde com a familía e amigos.</p>
+                    <button class="btsP" onclick="pedir('pedidos')">Pedir uma torta</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="pedidos">
+        <div id="pedidosB">
+            <h1 class="titles">- Faça o seu pedido -</h1>
+            <div id="barP">
+                <p class="pT">Seu nome</p>
+                <input type="text" class="txtMs">
+                <p class="pT">Seu telefone</p>
+                <input type="number" class="txtMs">
+                <p class="pT">O que você deseja pedir?</p>
+                <input type="text" class="txtMs">
+                <p class="pT">Descreva algo especifico do seu pedido (opcional)</p>
+                <textarea class="txtMs" style="height: 100px; resize: none;"></textarea>
+                <button id="btPedir" onclick="Fpedir()">Fazer pedido</button>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div id="contatoB">
+            <div id="barC">
+                <h1 class="titles">- Entre em contato -</h1>
+                <p class="pC">
+                    <b>E-mail:</b> padariasabordodia@psdd.com
+                </p>
+                <p class="pC">
+                    <b>Fone:</b> (98) 98765 - 4321
+                </p>
+            </div>
+        </div>
+    </section>
+    <p id="pF1">© Padaria Sabor do Dia - Todos os direitos reservados</p>
+    <p id="pF2">Atenção! Este site não tem vínculo algum com alguma padaria real com o nome "Padaria Sabor do Dia", este site apenas serve como treino de HTML, CSS e JavaScript e não tem a intenção de vendor algum produto real.</p>
+</body>
+</html>
