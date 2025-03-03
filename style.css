@@ -53,6 +53,7 @@ body{
     padding-bottom: 5px;
     border-radius: 15px;
     transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btsM:hover{
@@ -66,6 +67,7 @@ body{
 }
 
 #inicioB{
+    position: relative;
     background-image: url(recursos/imagem\ inicio\ padaria.jpg);
     background-size: cover;
     width: auto;
@@ -76,6 +78,21 @@ body{
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#inicioB::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(250, 184, 97, 1), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#inicioB h2, #inicioB p, #inicioB button{
+    z-index: 1;
 }
 
 #titleinicio{
@@ -97,7 +114,7 @@ body{
     text-shadow: 0 0 10px rgb(250, 184, 97);
 }
 
-#btinicio{
+.btinicio{
     color: white;
     background-color: rgb(250, 184, 97);
     font-family: Arial, Helvetica, sans-serif;
@@ -110,9 +127,10 @@ body{
     transition: all 0.2s ease;
     box-shadow: 0 0 10px rgb(250, 184, 97);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
-#btinicio:hover{
+.btinicio:hover{
     background-color: white;
     color: rgb(250, 184, 97);
     border-color: rgb(250, 184, 97);
@@ -199,6 +217,7 @@ body{
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btsP:hover{
@@ -275,6 +294,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     color: rgb(250, 184, 97);
     cursor: pointer;
     transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #btPedir:hover{
@@ -307,12 +327,13 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 26px;
     color: white;
     background-color: rgb(250, 184, 97);
     width: 100%;
     border-radius: 15px;
     padding: 10px;
+    word-break: break-word;
 }
 
 #pF1{
