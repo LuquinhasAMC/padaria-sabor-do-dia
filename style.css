@@ -109,6 +109,7 @@ body{
     border-radius: 15px;
     transition: all 0.2s ease;
     box-shadow: 0 0 10px rgb(250, 184, 97);
+    cursor: pointer;
 }
 
 #btinicio:hover{
